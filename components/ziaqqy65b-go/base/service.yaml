@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: ziaqqy65b-go
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: ziaqqy65b-go 
+  name: ziaqqy65b-go
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: ziaqqy65b-go 
